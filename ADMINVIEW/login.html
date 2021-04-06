@@ -1,0 +1,127 @@
+
+<html>
+<head>
+    <?php
+    session_start();
+    unset($_SESSION["id"]);
+    session_destroy();
+?>
+<style>
+
+div.i {
+	border-radius: 25px;
+    width: 400px;
+    height: 600px;
+    border: 5px solid black;
+    background:rgba(0,0,0,0.5);
+
+    padding: 25px;
+    margin: 80px;
+	margin-top: 40px;
+	
+}
+
+button{
+	width:150px;
+	height:40px;
+	text-align:center;
+	text-shadow: 1px 1px darkgray;
+	radius:50%;
+	box-shadow: 2px 4px darkgray;
+
+	
+}
+button:hover {
+    border: 2px solid blue;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: 200px;
+    border: 3px solid #ccc;
+    
+    transition: 0.5s;
+    outline: none;
+	
+}
+
+input[type=text], input[type=password], input[type=checkbox]:focus {
+    border: 3px solid #555;
+	border-radius: 4px;
+
+}
+
+body.example {
+        width:100%;
+    height:100%;
+    background-image: url("background.jpg");
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    
+
+}
+
+
+d:hover {
+    border: 4px solid #777;
+}
+p{
+	font-size: 20px;
+	font-family: arial ;
+	font-color: blue;
+}
+b{
+	box-shadow: 3px 5px black;
+}
+
+c.a{
+font-size:20px;
+margin-top:80px;
+font-color: lightgray;
+
+}
+c.b{
+font-size:30px;
+margin-top:80px;
+color: white;
+
+}
+
+
+
+</style>
+<script>
+function myFunction() {
+    var x = document.getElementById("myInput");
+    if (x.type === "password") {
+        x.type = "text";
+    } else {
+        x.type = "password";
+    }
+}
+</script>
+</head>
+<body class="example">
+
+	
+		<center>
+			<img src="bigbazaar.png" width="600" height="200">
+			<br>
+			
+	<div class="i"><form action="Login.php" method="POST">
+<c class="b">Employee id:</c><input type="text" placeholder="Enter Employee id"  name="ID" required /><br><br><br>
+<c class="b">Password:</c><input type="password" placeholder="Enter Password"  name="e_password" id="myInput" required /><br><br><br><br><br>
+<c class="b"><input type="checkbox" onclick="myFunction()">Show Password</c>
+
+<center><button><c class="a">Login</c></button></center><br><br><br>
+<c class="b">New to Big Bazaar?</c><br><br>
+
+</form>
+<center><a href="signup.html"><button><c class="a">Register Here</c></button></a></center></div>
+	</center>
+
+</body>
+</html>
+

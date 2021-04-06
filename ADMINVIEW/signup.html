@@ -1,0 +1,110 @@
+
+<html>
+<head>
+
+<style>
+
+div.i {
+	border-radius: 25px;
+    width: 400px;
+    height:1000px;
+    border: 5px solid black;
+    background:rgba(0,0,0,0.5);
+
+    padding: 25px;
+    margin: 80px;
+	margin-top: 40px;
+	
+}
+
+button{
+	width:150px;
+	height:40px;
+	text-align:center;
+	text-shadow: 1px 1px darkgray;
+	radius:50%;
+	box-shadow: 2px 4px darkgray;
+
+	
+}
+button:hover {
+    border: 2px solid blue;
+}
+
+input[type=text], input[type=password], input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: 200px;
+    border: 3px solid #ccc;
+    
+    transition: 0.5s;
+    outline: none;
+	
+}
+
+input[type=text], input[type=password], input[type=number]:focus {
+    border: 3px solid #555;
+	border-radius: 4px;
+
+}
+
+body.example {
+        width:100%;
+    height:100%;
+    background-image: url("background.jpg");
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    
+
+}
+
+
+d:hover {
+    border: 4px solid #777;
+}
+p{
+	font-size: 20px;
+	font-family: arial ;
+	font-color: blue;
+}
+b{
+	box-shadow: 3px 5px black;
+}
+
+c.a{
+font-size:30px;
+margin-top:80px;
+color: white;
+}
+c.b{
+font-size:20px;
+margin-top:80px;
+font-color: lightgray;
+}
+
+
+</style>
+</head>
+<body class="example">
+
+	
+		<center>
+			<img src="bigbazaar.png" width="600" height="200">
+			<br>
+		
+	<div class="i"><form action="Sign Up.php" method="POST">
+<c class="a">Employee id:</c><input type="text" placeholder="Enter Employee id"  name="ID" required /><br><br><br>
+<c class="a">Employee Name:</c><input type="text" placeholder="Enter Employee name"  name="e_name" required /><br><br><br>
+<c class="a">Set Password:</c><input type="password" placeholder="set Password"  name="e_password" required /><br><br><br><br><br>
+<c class="a">Confirm Password:</c><input type="password" placeholder="Confirm Password"  name="e_confirm" required /><br><br><br><br><br>
+<c class="a">Mobile No:</c><input type="number" placeholder="Mobile No"  name="e_mobile" required /><br><br><br><br><br>
+<c class="a">Email id:</c><input type="text" placeholder="Enter email id"  name="e_email" required /><br><br><br><br><br>
+<center><button><a href="signup.html"><c class="b">Sign Up</c></a></button></center><br><br><br>
+
+</form></div>
+	</center>
+	
+</body>
+</html>
+
